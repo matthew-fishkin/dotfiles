@@ -1,7 +1,15 @@
+# Set up path
+export PATH=/usr/local/mysql/bin:$PATH
+export CLASSPATH=/usr/local/lib:$CLASSPATH
+
+# mysql aliases
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+
 # Config alias to manage dotfiles in home directory
 # usage: cfg status
 alias cnfig='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-config config --local status.showUntrackedFiles no
+cnfig config --local status.showUntrackedFiles no
 
 # iTerm functions to use for badge
 function iterm2_print_user_vars() {
